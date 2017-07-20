@@ -3,6 +3,8 @@ from nltk.corpus import stopwords
 from gensim.corpora import WikiCorpus
 from pymystem3 import Mystem
 
+
+# set stem settings
 m = Mystem()
 stop_words = stopwords.words('russian')
 stop_words.extend([u'что', u'это', u'так', u'вот', u'быть', u'как', u'в', u'к', u'на', u'который'])
